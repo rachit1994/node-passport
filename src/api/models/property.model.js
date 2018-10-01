@@ -24,6 +24,9 @@ const propertySchema = new mongoose.Schema({
 		"type":"String",
 		enum: tenantsType
 	},
+	"booked":{
+		"type":Boolean
+	},
 	"amenities":{
 		"type":"Array",
 		"items":{
@@ -31,6 +34,9 @@ const propertySchema = new mongoose.Schema({
 		}
 	},
 	"description":{
+		"type":"String"
+	},
+	"address":{
 		"type":"String"
 	},
 	"imageUrls":{
